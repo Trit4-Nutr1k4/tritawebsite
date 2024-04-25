@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TRITA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body, h1, h2, h3, h4, h5, h6 {
+      font-family: "Montserrat", sans-serif;
+    }
+    .w3-row-padding img {
+      margin-bottom: 12px;
+    }
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+      width: 120px;
+      background: rgba(0, 0, 0, 0.5); /* Transparent black background */
+      position: fixed; /* Fix the navigation bar position */
+      z-index: 3; /* Ensure navigation bar appears above video */
+    }
+    /* Change menu bar color on hover */
+    .w3-sidebar a:hover {
+      background-color: aquamarine !important;
+    }
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+      margin-left: 120px;
+    }
+    /* Style the video: cover the entire window */
+    #galaxy {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* Place video behind other content */
+      object-fit: cover; /* Cover the entire video container */
+    }
+    /* Style the overlay content */
+    .content {
+      position: relative;
+      z-index: 2; /* Ensure content appears above the video */
+    }
+  </style>
+</head>
+<body class="w3-black">
+
+<!-- The video -->
+<video autoplay muted loop id="galaxy">
+  <source src="tech-web.mp4" type="video/mp4">
+</video>
+
+<!-- Optional: some overlay text to describe the video -->
+<div class="content">
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <img src="Trita Logo.png" style="width:100%">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>RRETH NESH</p>
+    </a>
+    <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-eye w3-xxlarge"></i>
+      <p>FOTO</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>KONTAKTO</p>
+    </a>
+  </nav>
+
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">RRETH NESH</a>
+      <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">FOTO</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">KONTAKTO</a>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center" id="home">
+    <img src="trita name.png" style="width:400px">
+      <h1 class="w3-jumbo"><span class="w3-hide-small"> </span>NUTRIKA</h1>
+      <p>Building tomorrow's solution today</p>
+      <img src="kamera 0.png" alt="kamera 0" class="w3-image" width="900" height="1000">
+    </header>
+ <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h1 class="w3-text-white">Kush jemi ne?</h1>
+    <hr style="width:200px" class="w3-opacity">
+    <h2 style="color: Aqua" >Objektivi Ynë</h2>
+    <img src="kamera + sensore 2.png" style="width:55%">
+<h5 style="color: Aliceblue">Kamera e Robotit Guardian- Nutrika, një zgjidhje inovative e krijuar për të rritur sigurinë dhe sigurinë në mjediset shkollore. I frymëzuar nga perëndesha mitologjike Nutrika nga mitologjia ilire, projekti ynë synon të mbrojë fëmijët me teknologjinë më të fundit.
+Projekti Trita kërkon të adresojë nevojën urgjente për përmirësimin e masave të sigurisë në shkolla. Objektivi ynë është të zhvillojmë një robot-kamerë që jo vetëm monitoron ambientet e shkollës, por gjithashtu reagon me shpejtësi ndaj kërcënimeve të mundshme, duke siguruar një mjedis të sigurt mësimi për studentët. Trita, perëndesha e nderuar e mitologjisë ilire, shërben si frymëzim pas projektit tonë. E njohur për rolin e saj si mbrojtëse e fëmijëve, Trita mishëron cilësitë e vigjilencës, kujdestarisë dhe kujdesit të palëkundur. Duke u nisur nga kjo mitologji, roboti-kamera jonë trashëgon shikimin vigjilent dhe përkushtimin e Tritës për të mbrojtur të cënuarit.</h5>
+
+<h5 style="color: Aliceblue"> Adresimi i Sfidave të Nxënësve: Objektivi ynë kryesor është të krijojmë një ambient mbështetës për nxënësit duke përdorur teknologjinë e avancuar të kamerës për të identifikuar dhe reaguar ndaj çështjeve si stresi, ankthi, grindjet dhe zullumet.</h5>
+
+<h5 style="color: Aliceblue"> Ofrimi i Mbështetjes Kohore: Synojmë të pajisim psikologët shkollorë dhe administratorët me të dhëna në kohë reale për të ndërhyrë menjëherë dhe ofruar mbështetje të përshtatshme për nxënësit në nevojë.</h5>
+
+<h2 style="color: Aqua"> Problemi që Synojmë të Zgjidhim</h2>
+<h5 style="color: Aliceblue"> Grindjet dhe Shqetësimet për Sigurinë: Rastet e zullumeve dhe grindjeve shpesh mund të mbeten pa u vërejtur ose pa raportuar, duke ndikuar në sigurinë dhe shëndetin emocional të nxënësve.</h5>
+
+<h2 style="color: Aqua"> Zgjidhja Jonë: Sistemi i Kameras Inovative</h2>
+<h5 style="color: Aliceblue"> Monitorimi në Kohë Reale: Sistemi ynë i kameras përdor algoritme të avancuara të vizionit kompjuterik dhe mësimit të makinave për të monitoruar sjelljen e nxënësve dhe për të zbuluar shenjat e stresit, ankthit, grindjeve, ose zullumeve.</h5>
+<h5 style="color: Aliceblue"> Njoftimet Në Kohë Reale: Pas zbulimit, sistemi dërgon njoftime të menjëhershme tek personeli i caktuar (p.sh., psikologë shkollorë, administratorë) për ndërhyrje të menjëhershme.</h5>
+<h5 style="color: Aliceblue"> Përmirësimi i Sigurisë Shkollore: Duke ofruar një qasje proaktive ndaj sigurisë së nxënësve, sistemi ynë synon të krijojë një ambient mbështetës dhe të sigurt për të gjithë nxënësit.</h5>
+
+<h2 style="color: Aqua"> Konsideratat Etike dhe Mbrojtjet e Privatësisë</h2>
+<h5 style="color: Aliceblue"> Një Përfaqësim i Privatësisë: Ne vlerësojmë privatësinë dhe konfidencialitetin e nxënësve. Sistemi ynë respekton udhëzimet etike dhe standardet rregullatore për të mbrojtur të dhënat e ndjeshme të nxënësve.</h5>
+
+<h2 style="color: Aqua"> Bashkëpunimi dhe Ndikimi</h2>
+<h5 style="color: Aliceblue"> Bashkëpunimi me Edukatorët dhe Psikologët: Ne punojmë ngushtë me psikologë shkollorë, edukatorë dhe nxënës për të siguruar që sistemi ynë jetë efektiv, respektues dhe në përputhje me nevojat e komunitetit shkollor.</h5>
+<h5 style="color: Aliceblue"> Ndikimi Pozitiv: Duke adresuar sfidat e nxënësve në mënyrë të menjëhershme, synojmë të krijojmë një ndikim pozitiv në shëndetin mendor, performancën akademike dhe mirëqenien e përgjithshme të nxënësve.</h5>
+<h2 style="color: Aqua"> Vizioni për të Ardhmen:</h2>
+<h5 style="color: Aliceblue"> Vizioni ynë është që të shohim sistemin tonë të kameras të zbatuar në shkolla në të gjithë botën, duke krijuar ambiente më të sigurta dhe më mbështetëse për nxënësit për të përparuar akademikisht dhe emocionalisht.</h5>
+
+    </p>
+    <div class="scroll-transition">
+  <h1 class="w3-padding-16 w3-text-white">Aftësitë e Nutrikës</h1>
+  <p class="w3-wide">Identifikimi i konflikteve 90%</p>
+  <div class="w3-white">
+    <div class="w3-blue" style="height:28px;width:95%" data-scroll></div>
+  </div>
+  <p class="w3-wide">Monitorimi i sjelljes & Analiza e të dhënave 85%</p>
+  <div class="w3-white">
+    <div class="w3-cyan" style="height:28px;width:85%" data-scroll></div>
+  </div>
+  <p class="w3-wide">Ndërmjetësimi dhe ndërhyrja 73%</p>
+  <div class="w3-white">
+    <div class="w3-teal" style="height:28px;width:80%" data-scroll></div>
+  </div>
+</div>
+
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">Siguri</span><br>
+        në shkollë
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">Ndihmë</span><br>
+        ndaj stafit shkollor
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">Inovacion</span><br>
+        i ri
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">Robot</span><br>
+        mitologjik 
+      </div>
+    </div>
+
+    <button class="w3-button w3-teal w3-hover-opacity w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Shkarko aplikacionin tani
+    </button>
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-white">Kamerat Nutrika-AI</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-aqua w3-xlarge w3-padding-32">Kamera ekonomike</li>
+          <li class="w3-padding-16">Basic camera (veçoritë bazë si zbulimi i lëvizjes; mund të mos mbështesin funksione të avancuara si njohja e fytyrës ose gjurmimi i objekteve.) </li>
+          <li class="w3-padding-16">772p relosution</li>
+          <li class="w3-padding-16">DVR- 1TB/2TB</li>
+          <li class="w3-padding-16">Sensore termike</li>
+          <li class="w3-padding-16">
+            <h2>300 €</h2>
+            <span class="w3-opacity">çmim ekonomik</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Bli tani</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-aqua w3-xlarge w3-padding-32">Kamera ADVANCED</li>
+          <li class="w3-padding-16">Kamera 4k (Njohja e fytyrës, gjurmimi i objekteve dhe aftësitë analitike për analizën e sjelljes.)</li>
+          <li class="w3-padding-16">1080p resolution</li>
+          <li class="w3-padding-16">NVR- 4TB/8TB</li>
+          <li class="w3-padding-16">Sensore termike + sensore ultrasonike</li>
+          <li class="w3-padding-16">
+            <h2>900-1200€</h2>
+            <span class="w3-opacity">pagesë (PayPal) </span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Bli tani</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+    <!-- Testimonials -->
+    <h1 class="w3-padding-24 w3-text-light-grey">Informacione dhe Udhezime mbi Projektin Titra dhe Kameren Nutrika</h3>  
+    <img src="kamera_3.png" style="width:500px"> 
+    <h2 style="color: Aqua"><span class="w3-large w3-margin-right">Projekti Trita: </span>Mitologjia ilire</h2>
+<h5 style="color: Aliceblue">Kamera e Robotit Guardian, një zgjidhje inovative e krijuar për të rritur sigurinë dhe sigurinë në mjediset shkollore. I frymëzuar nga perëndesha mitologjike Trita nga mitologjia ilire, projekti ynë synon të mbrojë fëmijët me teknologjinë më të fundit. Dallimi mes Trites dhe Nutrikes eshte se Trita eshte perendesha e shendetit- me te ne simbolizojme shendetin mendor te femijeve; Nutrika eshte perendesha qe mbron femijet; nderthurja e ketyre dy perendeshave solli idene e Projektit Trita me Robotin Guardian Nutrika, duke risjelle me nga afer mitologjine tone ilire.
+Projekti Trita kërkon të adresojë nevojën urgjente për përmirësimin e masave të sigurisë në shkolla. Objektivi ynë është të zhvillojmë një robot-kamerë që jo vetëm monitoron ambientet e shkollës, por gjithashtu reagon me shpejtësi ndaj kërcënimeve të mundshme, duke siguruar një mjedis të sigurt mësimi për studentët. Trita, perëndesha e nderuar e mitologjisë ilire, shërben si frymëzim pas projektit tonë. E njohur për rolin e saj si mbrojtëse e fëmijëve, Trita mishëron cilësitë e vigjilencës, kujdestarisë dhe kujdesit të palëkundur. Duke u nisur nga kjo mitologji, roboti-kamera jonë trashëgon shikimin vigjilent dhe përkushtimin e Tritës për të mbrojtur të cënuarit.</h5>
+    
+    <img src="skema 1.png" style="width:400px">
+    <h2 style="color: Aqua">Detaje teknike:</h2>
+<img src="kamera + sensore.png" style="width:55%">
+<h5 style="color: Aliceblue">Robot-kamera jonë Guardian kombinon teknologjinë më të fundit me veçoritë e avancuara për të përmbushur detyrat e saj mbrojtëse. I pajisur me vizion kompjuterik dhe aftësi të inteligjencës artificiale, ai mund të zbulojë incidente të ndryshme, duke përfshirë bullizmin, zënkat dhe emergjencat, me saktësi dhe shpejtësi të jashtëzakonshme. Për të zhvilluar një sistem të suksesshëm për detektimin e sjelljeve të dëmshme në ambientet shkollore, kamera e përdorur duhet të ketë disa karakteristika të veçanta:
+<br>
+1. **Rrezja e detektimit**: Kamera duhet të ketë një rreze detektimi të mjaftueshme për të mbuluar ambientin në mënyrë efektive. Kjo përfshin një kënd të gjërë të pamjes dhe një distancë të mjaftueshme për të identifikuar sjellje dhe veprime që ndodhin brenda ambientit të shkollës.
+<br>
+2. **Rezolucioni dhe cilësia e imazhit**: Për të siguruar një detektim të saktë dhe të qartë të sjelljeve, kamera duhet të ketë një rezolucion të lartë dhe një cilësi të mirë të imazhit. Kjo përfshin aftësinë për të kapur imazhe të qarta dhe të detajuara, duke përfshirë ngjyrat dhe format e objekteve dhe personave në pamje.
+<br>
+3. **Stabiliteti dhe rrotullimi**: Kamera duhet të jetë e pajisur me një mekanizëm të rrotullimit që lejon lëvizjen e saj përreth një qendre të caktuar. Ky rrotullim duhet të jetë i qëndrueshëm dhe i përshtatshëm për të siguruar një kryerje të plotë të ambientit dhe detektimin e sjelljeve në të gjitha këndet e pamjes.
+<br>
+4. **Fuqia dhe durimi i baterisë**: Për një përdorim të afërt dhe të qëndrueshëm në terren, kamera duhet të ketë një fuqi dhe një durim të mirë të baterisë. Kjo përfshin një kapacitet të mjaftueshëm të baterisë për të mbuluar një periudhë të gjatë kohore pa nevojën për rrjedhje të shpeshta të energjisë ose ndërprerje të sistemit.
+<br>
+5. **Përshtatshmëria me mjedisin shkollor**: Kamera duhet të jetë e përshtatshme për të punuar në mjedisin shkollor, duke përfshirë rezistencën ndaj kushteve të jashtme të temperaturës, lagështisë, dhe ndërhyrjeve të mundshme nga studentët ose personeli.
+<br>
+6. **Sistemet e komunikimit dhe kontrollit**: Kamera duhet të jetë e integruar me sistemet e komunikimit dhe kontrollit për të mundësuar transmetimin e informacionit dhe udhëzimet për veprimin e duhur bazuar në zbulimet dhe vlerësimet e bëra nga sistemi i detektimit.
+<br>
+Duke përdorur një kamera të dizajnuar dhe të konfiguruar me këto karakteristika në mendje, është e mundur të zhvillohet një sistem efektiv për detektimin e sjelljeve të dëmshme në ambientet shkollore. Kjo kamera do të luajë një rol kyç në sigurimin e sigurisë dhe mirëqenies së studentëve dhe personelit shkollor.</h5>
+
+<h2 style="color: Aqua">Elementet e projektimit:</h2>
+<h5 style="color: Aliceblue">Dizajni i Robot-Kamera Guardian është i ndikuar nga mitologjia e Tritës, duke përfshirë simbole dhe motive që lidhen me mbrojtjen dhe kujdestarinë. Pamja e saj e hijshme dhe futuriste pasqyron si sofistikimin e tij teknologjik ashtu edhe frymëzimin e tij mitologjik.</h5>
+
+<h2 style="color: Aqua">Funksioni:</h2>
+<h5 style="color: Aliceblue">Në funksionim, Robot-Kamera Guardian shërben si një kujdestar vigjilent brenda ambienteve të shkollës. Ai monitoron vazhdimisht rrethinën e tij, duke përdorur sensorët dhe algoritmet e tij të avancuara për të identifikuar kërcënimet e mundshme. Me zbulimin, ai mund të ndërhyjë menjëherë ose të lajmërojë autoritetet, duke siguruar reagim në kohë ndaj situatave kritike. Për të detektuar dhunën fizike, si pjesë e një sistemi të bazuar në inteligjencën artificiale, mund të përdorni një kombinim të teknikave të pamjes kompjuterike (computer vision) dhe të mësimit të thellë (deep learning). Këtu është një shpjegim i thjeshtë i procesit:
+<br>
+1. **Koleksionimi i të dhënave**: Fillimisht, ju duhet të mbledhni një sasi të mjaftueshme të të dhënave që përmbajnë video ose imazhe të sjelljes së dhunshme fizike në ambiente shkollore. Këto të dhëna duhet të jenë etiketuara me informacion që identifikon sjelljen e dhunshme.
+<br>
+2. **Përgatitja e të dhënave**: Pasi keni mbledhur të dhënat, duhet t'i përpunoni ato për t'i bërë ato të përshtatshme për të kaluar nëpër një model të mësimit të thellë. Kjo përfshin prerjen e videove në segmente më të vogla, zvogëlimin e rezolutës së tyre, dhe normalizimin e tyre.
+<br>
+3. **Trajnim i modelit të mësimit të thellë**: Përdorni një model të mësimit të thellë, si një rrjet neural konvolucional (CNN), dhe trajtoni të dhënat për të mësuar modelin të njohë tipare të sjelljes së dhunshme fizike. Ky proces përfshin disa faza të trajnimit të modelit, duke përdorur të dhënat e mbledhura.
+<br>
+4. **Vlerësimi i performancës së modelit**: Pas trajnimit, vlerësoni performancën e modelit duke përdorur një grup të veçantë të të dhënave për testim. Kjo ju lejon të shihni sa mirë modeli është në të përballur me të dhëna të reja që nuk i është trajnuar.
+v
+5. **Integrimi me sistemin e kamerës**: Në këtë fazë, modeli i trajnuar integrohet në sistemin e kamerës për të kryer detektimin e sjelljes së dhunshme fizike në kohë reale. Sistemi i kamerës kap video dhe përdor modelin për të identifikuar sjelljen e dhunshme.
+<br>
+6. **Veprimet e alarmit ose ndërhyrjes**: Nëse modeli identifikon sjellje të dyshimtë, sistemi mund të ndërhyjë duke aktivizuar alarma, duke njoftuar autoritetet shkollore, ose duke ndërmarrë masa të tjera të nevojshme për të menaxhuar situatën.</h5>
+<br>
+Kjo është një përshkrim i përgjithshëm i procesit për të krijuar një sistem për të detektuar dhunën fizike në ambientet shkollore duke përdorur inteligjencën artificiale. Gjatë këtij procesi, është e rëndësishme të konsultoheni me ekspertët e fushës së psikologjisë dhe të drejtat e njeriut për të siguruar që sistemi është etik dhe i përshtatshëm për përdorim në ambientet shkollore.</h5>
+
+<h2 style="color: Aqua">Përfitimet për shkollat:</h2>
+<h5 style="color: Aliceblue">Zbatimi i Robot-Kamera Guardian ofron përfitime të shumta për shkollat. Ai rrit sigurinë dhe sigurinë, duke u siguruar edukatorëve, prindërve dhe studentëve paqe mendore. Duke nxitur një mjedis të sigurt mësimi, ai promovon mirëqenien e studentëve dhe suksesin akademik.</h5>
+<h5 style="color: Aliceblue">Në të vërtetë, ndërtimi i një roboti për të njohur ngacmimet, luftimet dhe urgjencat përmes vizionit kompjuterik është një detyrë komplekse që kërkon planifikim dhe zbatim të kujdesshëm. Këtu është një përmbledhje e komponentëve dhe konsideratave kryesore të përfshira:</h5>
+<br>
+1. **Sistemi i kamerës**: Roboti duhet të jetë i pajisur me një aparat fotografik ose kamera të shumta për të kapur të dhëna vizuale nga rrethina e tij. Këto kamera duhet të kenë rezolucion dhe fushëpamje të përshtatshme për të monitoruar në mënyrë efektive mjedisin.
+<br>
+2. **Mbledhja dhe etiketimi i të dhënave**: Sasi të mëdha të të dhënave të etiketuara janë thelbësore për trajnimin e modeleve të mësimit të makinerive për të njohur me saktësi situata të ndryshme. Kjo përfshin kapjen e pamjeve video të skenarëve të ndryshëm (ngacmim, zënka, emergjenca) dhe shënimin e tyre me etiketat përkatëse.
+<br>
+3. **Teknikat e vizionit kompjuterik**: Teknika të ndryshme të vizionit kompjuterik, të tilla si zbulimi i objekteve, njohja e fytyrës dhe njohja e veprimeve, do të përdoren për të analizuar të dhënat e videos së kapur. Këto teknika do ta ndihmojnë robotin të identifikojë ngjarje ose sjellje specifike me interes në kohë reale.
+<br>
+4. **Sensorë shtesë**: Sensoren Termike MLX90614:
+MLX90614 është një termometër jo-kontaktues i infra të kuq për matjen e temperaturës. Ai mund të matë temperaturën e një objekti pa bërë kontakt fizik me të.
+Ky sensor përdor radiacionin infra të kuq që dalin nga një objekt për të përcaktuar temperaturën e tij. Është veçanërisht i dobishëm për të matur temperaturën e objekteve që janë të vështira për t'u arritur ose në lëvizje.
+MLX90614 komunikon përmes protokollit I2C (Inter-Integrated Circuit), çka e bën të lehtë interfesimin me mikrokontrollorë si Raspberry Pi.
+Sensoren Ultrasonike të Distancës HC-SR04:
+HC-SR04 është një sensor ultrasonik i distancës që përdor valë ultrasonike për të matur distancën.
+Vepron duke dërguar impulsat ultrasonikë dhe duke matur kohën që i duhet impulsave për të kthyer pasi të godasin një objekt. Duke llogaritur dallimin e kohës, sensori mund të përcaktojë distancën në objektin.
+HC-SR04 zakonisht ka dy pine: një për shkaktimin e impulsit ultrasonik dhe një për pranimin e echos. Ai vepron në një frekuencë prej rreth 40 kHz.
+Ky sensor përdoret zakonisht në projekte robotike, automatizim dhe projekte të Internetit të Gjërave (IoT) për detyra si zbulimi i pengesave, matja e distancës dhe zbulimi i lëvizjes.
+<br>
+5. **Programimi dhe marrja e vendimeve**: Softueri i robotit, me gjasë i implementuar në Python për shkak të mbështetjes së tij të gjerë për bibliotekat e mësimit të makinerive dhe vizionit kompjuterik, do të përpunojë të dhënat vizuale dhe audio të kapur nga sensorët. Bazuar në rezultatet e analizës, roboti do të programohet për të ndërmarrë veprimet e duhura, si ndërhyrja në situatë, ofrimi i ndihmës ose alarmimi i autoriteteve.
+<br>
+6. **Integrimi dhe vendosja**: Pasi të zhvillohet, sistemi i robotëve do të duhet të integrohet në mjedisin e tij operacional dhe të vendoset në mënyrë efektive. Kjo mund të përfshijë testimin dhe rregullimin e mirë të sistemit për të siguruar performancë të besueshme në skenarët e botës reale.
+<br>
+Duke integruar këto komponentë dhe konsiderata, roboti mund të njohë në mënyrë efektive dhe t'u përgjigjet incidenteve të ngacmimit, luftimeve dhe emergjencave, duke kontribuar në mjedise më të sigurta dhe më të sigurta.
+
+
+<h5 style="color: Aliceblue">Aplikacioni që kontrollon sistemin e kamerës dhe përpunon të dhënat luan një rol vendimtar në funksionalitetin e përgjithshëm të robotit. Ja se si funksionon:</h5>
+<br>
+1. **Ndërfaqja e kontrollit**: Aplikacioni ofron një ndërfaqe miqësore për përdoruesit për kontrollin dhe monitorimin e robotit dhe sistemit të tij të kamerës. Përdoruesit mund të aksesojnë aplikacionin përmes pajisjeve të ndryshme si telefonat inteligjentë, tabletët ose kompjuterët.
+<br>
+2. **Përpunimi i të dhënave**: Aplikacioni përpunon të dhënat e kapura nga sistemi i kamerës në kohë reale duke përdorur algoritmet e shikimit kompjuterik. Kjo përfshin analizimin e pamjeve video dhe sinjaleve audio për të zbuluar incidente të ngacmimit, zënkave ose emergjencave.
+<br>
+3. **Njohja e situatës**: Bazuar në rezultatet e analizës, aplikacioni identifikon dhe klasifikon situata të ndryshme, si incidente ngacmimi, grindje fizike ose situata emergjente. Ky informacion përdoret për të përcaktuar veprimet e duhura që duhen ndërmarrë nga roboti.
+<br>
+4. **Autoritetet paralajmëruese**: Në rast emergjencash ose incidentesh serioze, aplikacioni është programuar për të alarmuar autoritetet përkatëse ose individët e caktuar. Kjo mund të përfshijë dërgimin e njoftimeve me email, mesazhe me tekst ose nëpërmjet një sistemi të centralizuar monitorimi.
+<br>
+5. ** Ruajtja dhe analiza e të dhënave **: Aplikacioni gjithashtu trajton ruajtjen dhe analizën e të dhënave të kapura për referencë dhe analizë në të ardhmen. Kjo përfshin ruajtjen e pamjeve video dhe meta të dhënave të lidhura me çdo incident për qëllime rishikimi dhe raportimi.
+<br>
+6. **Monitorimi dhe kontrolli nga distanca**: Aplikacioni mundëson monitorimin dhe kontrollin në distancë të robotit dhe sistemit të tij të kamerës, duke i lejuar përdoruesit të aksesojnë burimet video live dhe të kontrollojnë lëvizjet dhe veprimet e robotit nga kudo me një lidhje interneti.
+<br>
+7. **Integrimi me sisteme të tjera**: Aplikacioni mund të integrohet me sisteme ose platforma të tjera, si sistemet e sigurisë, sistemet e menaxhimit të shkollave ose sistemet e reagimit ndaj emergjencave, për të përmirësuar aftësitë e koordinimit dhe reagimit.
+<br>
+<h5 style="color: Aliceblue">Për sa i përket vendit ku dërgohen të dhënat, kjo varet nga zbatimi dhe kërkesat specifike të projektit. Në disa raste, të dhënat mund të përpunohen dhe ruhen lokalisht në robot ose brenda një rrjeti të mbyllur. Në raste të tjera, veçanërisht për qëllime monitorimi dhe sinjalizimi në distancë, të dhënat mund të dërgohen në serverë të bazuar në renë kompjuterike ose në qendra të centralizuara monitorimi për analizë dhe përgjigje.</h5>
+</p>
+
+<img src="skema 2.png" style="width:400px">
+
+<h2 style="color: Aqua"> E pajisur me AI</h2>
+<h5 style="color: Aliceblue"> Përveç aftësive të saj për survejim, kamera-roboti gjithashtu do të jetë e fuqizuar nga inteligjenca artificiale (AI) për të përmirësuar funksionalitetin dhe efektivitetin e saj. Teknologjia AI e integruar në robot do të lejojë analizën e avancuar të të dhënave që grumbullohen, duke lejuar për njohuri më të hollësishme në lidhje me gjendjet emocionale dhe sjelljet e nxënësve dhe mësuesve.
+
+Algoritmet AI do të trajtohen për të njohur modelet dhe për të zbuluar shenjat e distresit, stresit, ose sjelljeve të pazakonta. Për shembull, roboti mund të programohet për të identifikuar shprehjet fytyrësore të lidhura me trishtimin, ankthin, ose trazirën. Ai gjithashtu mund të analizojë tonin e zërit dhe gjuhën e trupit për të vlerësuar gjendjen emocionale të individëve në afërsi të tij.
+
+Për më tepër, AI do të lejojë robotin të përshtatet dhe të mësojë gjatë kohës bazuar në të dhënat që grumbullohen. Kjo do të thotë që ai mund të përmirësojë vazhdimisht aftësinë e tij për të identifikuar dhe për të reaguar në situata të ndryshme, duke ofruar mbështetje gjithnjë e më të saktë dhe në kohë për ata që kanë nevojë.
+
+Për më tepër, aftësitë e fuqizuara nga AI të robotit mund të zgjasin përtej thjeshtë survejimit dhe zbulimit. Ai gjithashtu mund të ofrojë kthime dhe ndërhyrje në kohë reale, siç është paralajmërimi i mësuesve ose administratorëve të shkollës kur zbulon shenja të distresit ose duke lejuar për ushtrime ose ndërhyrje qetësuese për nxënësit që përjetojnë emocione të forcuar.
+
+Në përgjithësi, integrimi i teknologjisë AI në kamera-robot e përmirëson aftësinë e saj për të përmbushur rolin si një mjet i survejimit dhe mbështetjes në ambientin e klasës, duke kontribuar në mirëqenien dhe sigurinë e nxënësve dhe mësuesve në të njëjtën kohë.
+.</h5>
+
+<h2 style="color: Aqua"> Ky projekt mund të ofrojë disa përfitime për mjedisin shkollor dhe të jetë veçanërisht i favorshëm për drejtorin dhe psikologun e shkollës:</h2>
+<h6 style="color: gray">
+<br>
+<p>1. **Siguria dhe siguria e zgjeruar**: Duke vendosur një robot të pajisur me aftësi të avancuara mbikëqyrjeje, shkolla mund të rrisë sigurinë dhe sigurinë në kampus. Sistemi mund të zbulojë dhe t'u përgjigjet incidenteve të ngacmimit, zënkave dhe emergjencave në kohë reale, duke ndihmuar në parandalimin e përshkallëzimit dhe sigurimin e një mjedisi më të sigurt mësimi për studentët dhe stafin.
+<br>
+2. **Ndërhyrja e hershme**: Aftësia e sistemit për të njohur dhe ndërhyrë në situata të tilla si ngacmimi ose zënkat lejon ndërhyrjen e hershme, e cila mund të ndihmojë në adresimin e çështjeve përpara se ato të përshkallëzohen. Kjo qasje proaktive mund të kontribuojë në nxitjen e një kulture pozitive shkollore dhe parandalimin e përhapjes së sjelljeve negative.
+<br>
+3. **Vështrime të drejtuara nga të dhënat**: Të dhënat e mbledhura nga sistemi mund të ofrojnë njohuri të vlefshme për modelet e sjelljes dhe incidentet brenda mjedisit shkollor. Drejtori dhe psikologu mund t'i përdorin këto të dhëna për të identifikuar tendencat, për të adresuar çështjet themelore dhe për të zbatuar ndërhyrje të synuara ose programe mbështetëse për të promovuar sjellje pozitive dhe mirëqenie midis nxënësve.
+<br>
+4. **Mbështetje për Vendimmarrje**: Sinjalizimet dhe të dhënat në kohë reale të ofruara nga sistemi mund të mbështesin proceset e vendimmarrjes për ekipin drejtues të shkollës. Drejtori mund ta përdorë këtë informacion për të marrë vendime të informuara në lidhje me shpërndarjen e burimeve, veprimet disiplinore dhe strategjitë e ndërhyrjes, ndërsa psikologu mund ta përdorë atë për të përshtatur shërbimet mbështetëse dhe programet e këshillimit për të përmbushur nevojat e nxënësve.
+<br>
+5. **Marrja e burimeve**: Duke automatizuar proceset e vëzhgimit dhe zbulimit të incidenteve, sistemi mund të ndihmojë në optimizimin e shpërndarjes së burimeve brenda shkollës. Në vend që të mbështeten vetëm në monitorimin dhe ndërhyrjen manuale, drejtori dhe psikologu mund të përqendrojnë kohën dhe vëmendjen e tyre në adresimin e çështjeve me prioritet të lartë dhe ofrimin e mbështetjes së synuar për studentët në nevojë.</p>
+6. **Besimi i prindërve dhe i komunitetit**: Zbatimi i masave të avancuara të sigurisë, si një sistem mbikëqyrjeje robotike, mund të rrisë besimin e prindërve dhe komunitetit në angazhimin e shkollës për sigurinë dhe mirëqenien e nxënësve. Kjo mund të çojë në rritjen e besimit dhe mbështetjes nga palët e interesuara, gjë që është thelbësore për ruajtjen e një mjedisi pozitiv shkollor.
+<br>
+Në përgjithësi, ky projekt ka potencialin të përmirësojë ndjeshëm sigurinë, të promovojë sjellje pozitive dhe të mbështesë mirëqenien e nxënësve brenda mjedisit shkollor, duke e bërë atë të dobishëm si për ekipin drejtues të shkollës ashtu edhe për komunitetin më të gjerë të shkollës.
+ </h5>
+
+<h2 style="color: Aqua"> Sensorët</h2> 
+<h5 style="color: Teal">Sensori Termik MLX90614:</h5>
+<img src="sensore termike.png" style="width:55%">
+<br> 
+<h6 style="color: Aliceblue">MLX90614 është një termometër jo-kontaktues i infra të kuq për matjen e temperaturës. Ai mund të matë temperaturën e një objekti pa bërë kontakt fizik me të.
+Ky sensor përdor radiacionin infra të kuq që dalin nga një objekt për të përcaktuar temperaturën e tij. Është veçanërisht i dobishëm për të matur temperaturën e objekteve që janë të vështira për t'u arritur ose në lëvizje.
+MLX90614 komunikon përmes protokollit I2C (Inter-Integrated Circuit), çka e bën të lehtë interfesimin me mikrokontrollorë si Raspberry Pi. Temperatura e trupit sensoret termik:
+-Gjate nje zenke ose nje grindjeje midis dy personave qofshin ata nxenes apo mesues temperatura e trupit ngrihet.Kamera do jete e pajisur me sensore termike qe do te masin rritjen e temperatures dhe do te kuptojne qe midis dy personave po ndodh nje konflikt.
+-Gjate nje zenke ku mund te kete dhe goditje midis nje grup prap temperatura e trupit do te rritet ne momentin qe dora prek trupin e nje personi tjeter.Sepse qelizat nuk jane te njohura me qelizat e panjohura te nje trupi tjeter.Dhe perseri temperatura e trupit do te rritet.Pra dalim ne konlusion qe gjate nje zenke apo goditjeje temperatura e trupit do te rritet dhe kamera do ta dalloje kete gje me ane te sensoreve termike.</h6>
+<h5 style="color: Teal">Sensori Ultrasonik i Distancës HC-SR04:</h5>
+<img src="sensore distance.png" style="width:55%">
+<br>
+<h6 style="color: Aliceblue">HC-SR04 është një sensor ultrasonik i distancës që përdor valë ultrasonike për të matur distancën.
+Vepron duke dërguar impulsat ultrasonikë dhe duke matur kohën që i duhet impulsave për të kthyer pasi të godasin një objekt. Duke llogaritur dallimin e kohës, sensori mund të përcaktojë distancën në objektin.
+HC-SR04 zakonisht ka dy pine: një për shkaktimin e impulsit ultrasonik dhe një për pranimin e echos. Ai vepron në një frekuencë prej rreth 40 kHz.
+Ky sensor përdoret zakonisht në projekte robotike, automatizim dhe projekte të Internetit të Gjërave (IoT) për detyra si zbulimi i pengesave, matja e distancës dhe zbulimi i lëvizjes.</h5>
+
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Galeria</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="kamera 2.jpg" style="width:100%">
+        <img src="kamera 1.jpg" style="width:100%">
+        <img src="kamera 5.jpg" style="width:100%">
+        <img src="kamera 8.jpg" style="width:100%"> 
+        <img src="kamera 9.jpg" style="width:100%"> 
+        <img src="kamera 10.jpg" style="width:100%">    
+      </div>
+
+      <div class="w3-half">
+        <img src="kamera 3.png" style="width:100%">
+        <img src="kamera 4.jpg" style="width:100%">
+        <img src="kamera 6.jpg" style="width:100%">
+        <img src="kamera 7.jpg" style="width:100%">
+
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Kontakto</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Korçë, ALB</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +355 151515</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: MPSH@gmail.com</p>
+    </div><br>
+    <p>Per cdo gje, na kontaktoni. </p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Emri" required name="Emri"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Titulli" required name="Titulli"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Mesazhi" required name="Mesazhi"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type=submit>
+          <i class="fa fa-paper-plane"></i> Dërgo
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-cyan w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <h4 class="w3-medium">Shiko video <a href="https://www.canva.com/design/DAGAz3PoBT4/qkqO9xw-Zb60EJcKIoI3yA/view?utm_content=DAGAz3PoBT4&utm_campaign=designshare&utm_medium=link&utm_source=recording_view" target="_blank" class="w3-hover-text-blue">Nutrika</a></h4>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
